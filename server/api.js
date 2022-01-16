@@ -39,7 +39,7 @@ router.post("/initsocket", (req, res) => {
 });
 
 // |------------------------------|
-// | write your API methods below!|
+// | write API methods below!|
 // |------------------------------|
 
 // anything else falls to this "not found" case
