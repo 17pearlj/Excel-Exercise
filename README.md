@@ -6,9 +6,9 @@ Requirements
   - NodeJS version 16. If it is installed correctly, typing "node --version" should give v16.13.1 and "npm --version" should give 8.1.2
 
 Helpful Links:
-mongodb setup: https://docs.google.com/presentation/d/1augiH6P3wBXoTcM2HidDC7paPPkdmep1a28ZV7VnxaM/edit?usp=sharing
-changing client id: https://docs.google.com/presentation/d/1AtpdVt3i0XagF9rNwtLoP-UV8DX38ZtEBO3ED2MNZdM/edit?usp=sharing
-web-building help: https://docs.google.com/document/d/1R_SxRirzaWk42CzhP0Jch9h0yV68Odte16fbjm7uKgE/edit?usp=sharing
+- mongodb setup: https://docs.google.com/presentation/d/1augiH6P3wBXoTcM2HidDC7paPPkdmep1a28ZV7VnxaM/edit?usp=sharing
+- changing client id: https://docs.google.com/presentation/d/1AtpdVt3i0XagF9rNwtLoP-UV8DX38ZtEBO3ED2MNZdM/edit?usp=sharing
+- web-building help: https://docs.google.com/document/d/1R_SxRirzaWk42CzhP0Jch9h0yV68Odte16fbjm7uKgE/edit?usp=sharing
 
 ## To change in the skeleton
 
