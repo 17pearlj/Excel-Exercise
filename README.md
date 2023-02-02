@@ -1,6 +1,6 @@
 # Project Lido
 
-Forked from MIT's Weblab Winter Session.
+Forked from 2022 Entry in MIT's Weblab Winter Competition.
 
 ## Initial setup
 
