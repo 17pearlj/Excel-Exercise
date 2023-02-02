@@ -1,4 +1,6 @@
-# How to code a webapp with this skeleton
+# Project Lido
+
+Forked from MIT's Weblab Winter Session.
 
 ## Initial setup
 
