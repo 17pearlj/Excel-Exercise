@@ -2,10 +2,7 @@ const fs = require("fs");
 const net = require("net");
 
 /**
- * Provides some basic checks to make sure you've
- * correctly set up your repository.
- *
- * You normally shouldn't need to modify this file.
+ * Validation checks during setup.
  *
  * Curent checks:
  * - node_modules exists
@@ -35,7 +32,7 @@ module.exports = {
   checkSetup: () => {
     if (!fs.existsSync("./node_modules/")) {
       throw new NodeSetupError(
-        "node_modules not found! This probably means you forgot to run 'npm install'"
+        "node_modules not found! Run 'npm install'"
       );
     }
   },
@@ -45,9 +42,9 @@ module.exports = {
       // if the server receives a request on /, we must be on port 3000 not 5000
       if (!fs.existsSync("./client/dist/bundle.js")) {
         throw new NodeSetupError(
-          "Couldn't find bundle.js! If you want to run the hot reloader, make sure 'npm run hotloader'\n" +
-            "is running and then go to http://localhost:5000 instead of port 3000.\n" +
-            "If you're not using the hot reloader, make sure to run 'npx webpack' before visiting this page"
+          "Couldn't find bundle.js! Run 'npm run hotloader'\n" +
+            "and go to http://localhost:5000 (not 3000).\n" +
+            "If using hot reloader, run 'npx webpack' before visiting the page"
         );
       }
 

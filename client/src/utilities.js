@@ -1,10 +1,9 @@
 /**
- * Utility functions to make API requests.
- * By importing this file, you can use the provided get and post functions.
- * You shouldn't need to modify this file, but if you want to learn more
- * about how these functions work, google search "Fetch API"
- *
- * These functions return promises, which means you should use ".then" on them.
+ * Utility functions for API requests.
+ * Provided get and post functions.
+ * Fetch API
+
+ * Format:
  * e.g. get('/api/foo', { bar: 0 }).then(res => console.log(res))
  */
 
@@ -25,10 +24,10 @@ function convertToJSON(res) {
   }
 
   return res
-    .clone() // clone so that the original is still readable for debugging
-    .json() // start converting to JSON object
+    .clone() // clone so original is readable for debugging
+    .json() // convert to JSON object
     .catch((error) => {
-      // throw an error containing the text that couldn't be converted to JSON
+      // output text error, non JSON formattable 
       return res.text().then((text) => {
         throw `API request's result could not be converted to a JSON object: \n${text}`;
       });
