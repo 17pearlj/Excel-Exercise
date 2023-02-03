@@ -4,7 +4,7 @@ import { Router } from "@reach/router";
 import NavBar from "./modules/Navbar/Navbar.js";
 
 import "../utilities.css";
-import {Skeleton, Home, NotFound} from "./pages/PageManager.js"
+import { Skeleton, Home, NotFound, Form} from "./pages/PageManager.js"
 import { socket } from "../client-socket.js";
 
 import { get, post } from "../utilities";
@@ -63,7 +63,8 @@ class App extends React.Component {
           /> 
       <Router>
         <Skeleton path = "/Welcome"/>
-        <Home path = "/" firstname={this.state.FirstName} lastname={this.state.LastName}/>
+        <Form path="/form" userId={this.state.userId}/>
+        <Home path = "/" firstname={this.state.FirstName} lastname={this.state.LastName} userId={this.state.userId}/>
         <NotFound default />
       </Router>
     </>

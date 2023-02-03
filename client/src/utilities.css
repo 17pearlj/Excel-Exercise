@@ -92,3 +92,11 @@ form {
 #root {
   padding: 15px;
 }
+
+button {
+  background: white;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}

@@ -1,6 +1,6 @@
 /*
 |--------------------------------------------------------------------------
-| server.js -- The core of your server
+| server.js -- The core of the server
 |--------------------------------------------------------------------------
 |
 | Server start up. 
@@ -23,6 +23,7 @@ const mongoose = require("mongoose"); // MongoDb
 const path = require("path"); // File and directory paths
 
 const api = require("./api");
+const object = require("./apis/object");
 const auth = require("./auth");
 
 // socket stuff
@@ -63,6 +64,7 @@ app.use(auth.populateCurrentUser);
 
 // Connect user-defined routes
 app.use("/api", api);
+app.use("/api/object", object);
 
 // Load the compiled react files, which will serve /index.html and /bundle.js
 const reactPath = path.resolve(__dirname, "..", "client", "dist");

@@ -36,8 +36,12 @@ function convertToJSON(res) {
 
 // Helper code to make a get request. Default parameter of empty JSON Object for params.
 // Returns a Promise to a JSON Object.
-export function get(endpoint, params = {}) {
-  const fullPath = endpoint + "?" + formatParams(params);
+export async function get(endpoint, params = {}) {
+  var fullPath = endpoint;
+  if (params) {
+    fullPath +=  "?" + formatParams(params);
+  }
+
   return fetch(fullPath)
     .then(convertToJSON)
     .catch((error) => {
@@ -58,5 +62,20 @@ export function post(endpoint, params = {}) {
     .catch((error) => {
       // give a useful error message
       throw `POST request to ${endpoint} failed with error:\n${error}`;
+    });
+}
+
+// Helper code to make a put request. Default parameter of empty JSON Object for params.
+// Returns a Promise to a JSON Object.
+export function put(endpoint, params = {}) {
+  return fetch(endpoint, {
+    method: "put",
+    headers: { "Content-type": "application/json" },
+    body: JSON.stringify(params),
+  })
+    .then(convertToJSON) // convert result to JSON object
+    .catch((error) => {
+      // give a useful error message
+      throw `PUT request to ${endpoint} failed with error:\n${error}`;
     });
 }
