@@ -4,7 +4,7 @@ import { Router } from "@reach/router";
 import NavBar from "./modules/Navbar/Navbar.js";
 
 import "../utilities.css";
-import { Skeleton, Home, NotFound, Form} from "./pages/PageManager.js"
+import {Skeleton, Home, NotFound, Form} from "./pages/PageManager.js"
 import { socket } from "../client-socket.js";
 
 import { get, post } from "../utilities";
