@@ -12,7 +12,6 @@ class Home extends React.Component {
             visible: false,
             objects: []
         }
-        this.addObject = this.addObject.bind(this);
         this.toggleObjectVisibility = this.toggleObjectVisibility.bind(this);
     }
 
