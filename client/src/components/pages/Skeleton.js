@@ -20,7 +20,7 @@ const Skeleton = ({ userId, handleLogin, handleLogout }) => {
         </li>
         <li>Checkout client components for React classes and forms</li>
         <li>
-          Checkout ___ for api usage
+          Checkout utilities for api usage
         </li>
       </ul>
     </>

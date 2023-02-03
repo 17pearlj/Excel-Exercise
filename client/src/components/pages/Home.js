@@ -47,12 +47,13 @@ class Home extends React.Component {
     <>
         <h1>Home Page</h1>
         <h2> Welcome {this.state.firstname} {this.state.lastname}</h2>
-        <Link to="/form"> <button  >Make an object</button></Link>
+      {this.props.userId ?
+        (<><Link to="/form"> <button  >Make an object</button></Link>
         <button onClick = {this.toggleObjectVisibility}> {this.state.visible ? "Hide" : "Show"} objects </button>
       {this.state.visible ?  (
       <>
         {this.state.objects.map((value)=> <h3>{value.name}</h3>)}</>
-      )  : (<></>) }
+      )  : (<></>) }</>) : (<></>) }
     </>
   )};
 };
