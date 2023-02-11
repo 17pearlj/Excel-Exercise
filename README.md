@@ -1,4 +1,6 @@
-# Project Lido
+# Excel exercise:
+
+<img width="600" alt="screen2" src="https://user-images.githubusercontent.com/18289791/218274703-70f800de-3997-4616-9a0e-a352d97aef89.png">
 
 Forked from 2022 Entry in MIT's Weblab Winter Competition.
 
