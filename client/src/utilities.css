@@ -93,6 +93,12 @@ form {
   padding: 15px;
 }
 
+input{
+  width:6%;
+  padding:0px;
+  margin:0;
+}
+
 button {
   background: white;
   border: 1px solid grey;
